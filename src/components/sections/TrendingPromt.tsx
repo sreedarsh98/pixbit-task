@@ -1,22 +1,30 @@
+"use client";
 import React from "react";
-import promtImg from "@/assets/images/promt.png";
 import AnimatedButton from "../AnimatedButton";
 
 const TrendingPromt: React.FC = () => {
   return (
     <>
-      <section className="w-full bg-black text-white flex flex-col items-center justify-center px-[350px] py-16 pt-[124px]">
-        <div className="max-w-3xl text-center mb-12">
-          <h1 className="font-normal text-[58px] leading-[120%] tracking-[0] text-center text-white mb-[28px]">
+      {/* 🔹 Top Text Section */}
+      <section className="w-full bg-black text-white flex flex-col items-center justify-center 
+                          px-4 sm:px-8 md:px-16 lg:px-24 xl:px-[100px] 
+                          py-16 sm:py-20 md:py-24 pt-[124px]">
+        <div className="max-w-4xl text-center mb-10 sm:mb-12">
+          {/* Heading */}
+          <h1 className="font-normal text-[32px] sm:text-[40px] md:text-[48px] lg:text-[58px] 
+                         leading-[120%] tracking-[0] text-white mb-[20px] sm:mb-[28px]">
             See Trending Prompts
           </h1>
-          <p className="text-[#FFFFFF99] text-base md:text-base leading-relaxed text-opacity-60 mb-8">
-            Discover endless creativity with Promptverse. Generate diverse
-            content effortlessly using prompts. Stay updated with real-time
-            topics, actionable tasks, and relevant insights from any document or
-            URL — all in one space. Smarter design. Content more efficiently.
+
+          {/* Description */}
+          <p className="text-[#FFFFFF99] text-sm sm:text-base md:text-lg leading-relaxed text-opacity-60 mb-8 px-2 sm:px-0">
+            Discover endless creativity with Promptverse. Generate diverse content effortlessly
+            using prompts. Stay updated with real-time topics, actionable tasks, and relevant insights
+            from any document or URL — all in one space. Smarter design. Content more efficiently.
           </p>
-          <div className="flex justify-center space-x-4">
+
+          {/* Buttons */}
+          <div className="flex justify-center flex-wrap gap-4">
             <div className="shuffle">
               <AnimatedButton
                 href=""
@@ -48,21 +56,17 @@ const TrendingPromt: React.FC = () => {
           </div>
         </div>
       </section>
-      {/* <section className="relative w-full overflow-hidden bg-black cmpad">
-        <img
-          src={promtImg}
-          alt="Promptverse preview"
-          className="w-full h-auto object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/90 to-transparent pointer-events-none"></div>
-      </section> */}
-      <section className="relative w-full h-[400px] md:h-[500px] lg:h-[600px] overflow-hidden bg-black cmpad">
+
+      {/* 🔹 Image Section */}
+      <section className="relative w-full overflow-hidden bg-black cmpad">
         <img
           src="/images/promt.png"
           alt="Promptverse preview"
-          className="w-full  object-cover object-center"
+          className="w-full h-[280px] sm:h-[380px] md:h-[500px] lg:h-[600px] 
+                     object-cover object-center"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/90 to-transparent pointer-events-none"></div>
+        {/* Gradient Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-transparent pointer-events-none"></div>
       </section>
     </>
   );
