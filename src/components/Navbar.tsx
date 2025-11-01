@@ -42,13 +42,8 @@ const Navbar: React.FC = () => {
               <AnimatedButton href="" label="Get Started" className="w-fit white-btn" />
             </div>
 
-            {/* Mobile & Tablet (≤1023px) */}
+            {/* Mobile & Tablet (≤1023px): Only Hamburger */}
             <div className="flex xl:hidden items-center gap-3">
-              <AnimatedButton
-                href=""
-                label="Get Started"
-                className="white-btn text-sm px-4 py-2"
-              />
               <button
                 onClick={() => setIsOpen(!isOpen)}
                 className="text-gray-300 focus:outline-none"
@@ -73,6 +68,15 @@ const Navbar: React.FC = () => {
             <li className="hover:text-white cursor-pointer transition">Pricing</li>
             <li className="hover:text-white cursor-pointer transition">Buy Premium</li>
           </ul>
+
+          {/* “Get Started” button inside the dropdown */}
+          <div className="pt-3 max-w-56">
+            <AnimatedButton
+              href=""
+              label="Get Started"
+              className="white-btn w-full text-center py-2"
+            />
+          </div>
         </div>
       )}
     </nav>

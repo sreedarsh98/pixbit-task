@@ -11,10 +11,10 @@ import {
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-black text-white pt-16 sm:pt-20 md:pt-24 pb-10 sm:pb-14 md:pb-16 px-4 sm:px-8 md:px-16 lg:px-24 xl:px-32">
+    <footer className="bg-black text-white pt-16 sm:pt-20 md:pt-24 pb-10 sm:pb-14 md:pb-16 px-4 cmpad ">
       <div className="max-w-7xl mx-auto">
         {/* === Brand Title === */}
-        <h1 className="font-normal text-[60px] sm:text-[60px] md:text-[80px] lg:text-[140px] xl:text-[172px] leading-[100%] text-white mb-12 sm:mb-16 md:mb-20 text-center md:text-left break-words">
+        <h1 className="font-normal text-[60px] sm:text-[60px] md:text-[80px] lg:text-[140px] xl:text-[152px] leading-[100%] text-white mb-12 sm:mb-16 md:mb-20 text-center md:text-left break-words">
           Promptverse AI
         </h1>
 
