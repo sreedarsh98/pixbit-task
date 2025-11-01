@@ -23,12 +23,31 @@ const ImageSections: React.FC = () => {
           className="w-full max-w-7xl bg-[#0E0E0E] grid grid-cols-1 md:grid-cols-2 
                      gap-4 sm:gap-6 md:gap-8 p-4 sm:p-6 md:p-10 rounded-2xl"
         >
-          <div className="w-full h-[260px] sm:h-[380px] md:h-[600px] overflow-hidden rounded-xl">
+          <div className="relative w-full h-[260px] sm:h-[380px] md:h-[600px] overflow-hidden rounded-xl group cursor-pointer">
             <img
               src="/images/image1.jpg"
               alt="Artwork 1"
-              className="w-full h-full object-cover rounded-xl transition-transform duration-500 hover:scale-105"
+              className="w-full h-full object-cover rounded-xl transition-transform duration-500 group-hover:scale-110"
             />
+
+            {/* === Circular Expanding Background === */}
+            <div
+              className="absolute bottom-0 right-0 w-[200%] h-[200%] bg-[#d9d9d9] rounded-full 
+                  scale-0 group-hover:scale-100 transition-transform duration-700 ease-out 
+                  origin-bottom-right"
+            ></div>
+
+            {/* === Text Overlay === */}
+            <div
+              className="absolute inset-0 flex items-center justify-center 
+               text-black text-sm font-medium opacity-0 
+               group-hover:opacity-100 transition-opacity duration-700 delay-200"
+            >
+              <div className="flex items-center gap-2">
+                <span>Start Generating</span>
+              
+              </div>
+            </div>
           </div>
 
           <div
