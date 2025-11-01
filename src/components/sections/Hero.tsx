@@ -13,19 +13,16 @@ const Hero: React.FC = () => {
       <div className="cmpad hero-banner w-full">
         <div className="relative z-10 text-center max-w-4xl mx-auto animate-[fadeIn_1s_ease-out]">
           
-          {/* Tagline */}
           <div className="inline-block text-sm sm:text-base text-white/70 mb-3">
             Promptverse.AI
           </div>
 
-          {/* Heading */}
           <h1 className="font-normal text-[30px] sm:text-[36px] md:text-[46px] lg:text-[56px] 
                          leading-tight sm:leading-[110%] md:leading-[120%] mb-5 text-white">
             Find Inspiration.
             <br className="hidden sm:block" /> Create, Generate, Produce & Automate.
           </h1>
 
-          {/* Description */}
           <p className="text-[13px] sm:text-[15px] md:text-[16px] leading-relaxed 
                         text-white/60 max-w-[700px] mx-auto font-light px-2 sm:px-0">
             Welcome to Promptverse. Effortlessly create content, explore endless prompts, 
@@ -34,7 +31,6 @@ const Hero: React.FC = () => {
             futuristic design that boosts productivity.
           </p>
 
-          {/* Buttons */}
           <div className="flex justify-center flex-wrap gap-4 mt-10">
             <div className="shuffle">
               <AnimatedButton

@@ -34,7 +34,6 @@ const CardItem: React.FC<{ title: string; url: string }> = ({ title, url }) => (
 const PromptverseSection: React.FC = () => {
   return (
     <>
-      {/* ✨ HERO SECTION */}
       <section className="w-full bg-black text-white flex flex-col items-center justify-center px-4 sm:px-8 md:px-16 lg:px-32 xl:px-[350px] py-16 pt-[124px]">
         <div className="max-w-7xl text-center mb-12">
           <h1 className="font-normal text-[36px] sm:text-[44px] md:text-[52px] lg:text-[58px] leading-[120%] tracking-[0] text-center text-white mb-[20px] sm:mb-[28px]">
@@ -49,7 +48,6 @@ const PromptverseSection: React.FC = () => {
         </div>
       </section>
 
-      {/* 🚀 MARQUEE SECTION */}
       <section className="w-full bg-black overflow-hidden relative pb-12">
         {/* Row 1 - Left to Right */}
         <Marquee
@@ -66,7 +64,6 @@ const PromptverseSection: React.FC = () => {
           </div>
         </Marquee>
 
-        {/* Row 2 - Right to Left */}
         <Marquee
           pauseOnHover
           gradient
@@ -82,7 +79,6 @@ const PromptverseSection: React.FC = () => {
           </div>
         </Marquee>
 
-        {/* Row 3 - Left to Right */}
         <Marquee
           pauseOnHover
           gradient

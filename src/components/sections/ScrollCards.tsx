@@ -43,7 +43,6 @@ const ScrollCards: React.FC = () => {
 
   return (
     <>
-      {/* 🌟 Header Section */}
       <section className="w-full bg-black text-white flex flex-col items-center justify-center px-4 sm:px-8 md:px-16 lg:px-[100px] pt-[124px] pb-16 text-center">
         <h1 className="font-normal text-[32px] sm:text-[42px] md:text-[52px] lg:text-[58px] leading-[120%] mb-[20px] sm:mb-[28px]">
           Generate Audio and Music
@@ -55,7 +54,6 @@ const ScrollCards: React.FC = () => {
         </p>
       </section>
 
-      {/* 🎧 Card Sections */}
       <section className="w-full bg-black flex flex-col gap-8 items-center justify-center px-4 sm:px-6 md:px-10 lg:px-[120px] xl:px-[100px] pb-20">
         {cards.map((card, index) => (
           <div
@@ -64,7 +62,6 @@ const ScrollCards: React.FC = () => {
               index % 2 !== 0 ? "md:flex-row-reverse" : ""
             }`}
           >
-            {/* 📝 LEFT (Text + Buttons) */}
             <div className="flex flex-col justify-between text-left order-1 md:order-1">
               <h2 className="font-medium text-[22px] sm:text-[28px] md:text-[34px] leading-[130%] text-white mb-4">
                 {card.title}
@@ -77,7 +74,6 @@ const ScrollCards: React.FC = () => {
                 {card.description2}
               </p>
 
-              {/* 🏷️ Buttons */}
               <div className="flex flex-col sm:flex-row sm:flex-wrap gap-3 mt-6">
                 {card.tags.map((tag, i) => (
                   <AnimatedButton
@@ -105,14 +101,12 @@ const ScrollCards: React.FC = () => {
               </div>
             </div>
 
-            {/* 🎵 RIGHT (Image) */}
             <div className="relative w-full h-[220px] sm:h-[280px] md:h-[450px] lg:h-[550px] overflow-hidden rounded-xl mt-6 md:mt-0 order-2 md:order-2">
               <img
                 src={card.image}
                 alt="AI Voice Preview"
                 className="w-full h-full object-cover rounded-xl transition-transform duration-500 hover:scale-105"
               />
-              {/* ▶ Play Button Overlay */}
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="w-14 h-14 sm:w-16 sm:h-16 flex items-center justify-center bg-white/10 hover:bg-white/20 rounded-full backdrop-blur-md transition-all duration-300">
                   <img src="/icons/icon1.svg" alt="Play Icon" width={28} height={28} />

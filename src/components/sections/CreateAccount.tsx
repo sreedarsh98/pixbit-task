@@ -5,14 +5,12 @@ import AnimatedButton from "../AnimatedButton";
 const CreateAccount: React.FC = () => {
   return (
     <section className="relative w-full bg-[#0E0E0E] text-white flex flex-col items-center justify-center py-16 sm:py-20 md:py-28 pt-[100px] sm:pt-[120px] overflow-hidden">
-      {/* ✨ Decorative Star */}
       <img
         className="absolute left-4 sm:left-8 top-[60px] sm:top-[80px] w-[60px] sm:w-[80px] md:w-[100px] h-[60px] sm:h-[80px] md:h-[100px] object-contain opacity-80"
         src="/icons/star.svg"
         alt="Star Icon"
       />
 
-      {/* 🌟 Heading and Button */}
       <div className="text-center max-w-[100%] sm:max-w-2xl md:max-w-7xl px-4 mb-10 sm:mb-12">
         <h1 className="font-normal text-[30px] sm:text-[42px] md:text-[52px] lg:text-[58px] leading-[120%] text-center text-white mb-[16px] sm:mb-[20px] md:mb-[28px]">
           Promptverse has no limitation.
@@ -21,7 +19,6 @@ const CreateAccount: React.FC = () => {
           Get started on a journey with Promptverse.
         </h1>
 
-        {/* 🔘 Button */}
         <div className="flex justify-center">
           <div className="shuffle">
             <AnimatedButton

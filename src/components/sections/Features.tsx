@@ -33,12 +33,10 @@ const Features: React.FC = () => {
   return (
     <section className="bg-black text-white px-4 sm:px-8 md:px-16 lg:px-24 xl:px-[100px] py-16 sm:py-20 md:py-28 mb-20 sm:mb-28">
       <div className="mx-auto max-w-7xl">
-        {/* Subheading */}
         <h2 className="font-normal text-[32px] sm:text-[44px] md:text-[56px] lg:text-[64px] leading-[100%] tracking-[0] text-white/50 mb-3 sm:mb-4">
           More features
         </h2>
 
-        {/* ✨ Animated Main Heading */}
         <motion.h1
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -46,7 +44,6 @@ const Features: React.FC = () => {
           viewport={{ once: true, amount: 0.3 }}
           className="font-normal text-[32px] sm:text-[44px] md:text-[56px] lg:text-[64px] leading-[100%] tracking-[0] text-white flex flex-wrap items-center"
         >
-          {/* Highlight animation on “Promptverse AI” */}
           <motion.span
             className="font-normal text-white"
             initial={{ backgroundSize: "0% 100%" }}
@@ -57,7 +54,6 @@ const Features: React.FC = () => {
             Promptverse AI
           </motion.span>
 
-          {/* Fade-in for the rest of the text */}
           <motion.span
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -69,7 +65,6 @@ const Features: React.FC = () => {
           </motion.span>
         </motion.h1>
 
-        {/* 🧩 Features Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10 md:gap-12 border-t border-white/20 pt-10 sm:pt-12">
           {features.map((item, idx) => (
             <motion.div

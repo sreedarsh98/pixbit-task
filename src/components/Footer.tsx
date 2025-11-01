@@ -13,14 +13,11 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-black text-white pt-16 sm:pt-20 md:pt-24 pb-10 sm:pb-14 md:pb-16 px-4 cmpad ">
       <div className="max-w-7xl mx-auto">
-        {/* === Brand Title === */}
         <h1 className="font-normal text-[60px] sm:text-[60px] md:text-[80px] lg:text-[140px] xl:text-[152px] leading-[100%] text-white mb-12 sm:mb-16 md:mb-20 text-center md:text-left break-words">
           Promptverse AI
         </h1>
 
-        {/* === Footer Grid === */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 sm:gap-12 md:gap-16">
-          {/* === Column 1: Navigation === */}
           <div>
             <h3 className="text-[#828282] font-light text-[15px] sm:text-[16px] leading-[24px] mb-3 sm:mb-4">
               Navigation
@@ -45,7 +42,6 @@ const Footer: React.FC = () => {
             </ul>
           </div>
 
-          {/* === Column 3: Contact Info === */}
           <div>
             <h3 className="text-[#828282] font-light text-[15px] sm:text-[16px] leading-[24px] mb-3 sm:mb-4">
               Contact us
@@ -57,9 +53,7 @@ const Footer: React.FC = () => {
             </ul>
           </div>
 
-          {/* === Column 4: Socials & Chat === */}
           <div className="flex flex-col gap-8">
-            {/* Follow us */}
             <div>
               <h3 className="text-[#828282] font-light text-[15px] sm:text-[16px] leading-[24px] mb-3 sm:mb-4">
                 Follow us
@@ -92,7 +86,6 @@ const Footer: React.FC = () => {
               </div>
             </div>
 
-            {/* Let’s chat */}
             <div>
               <h3 className="text-[#828282] font-light text-[15px] sm:text-[16px] leading-[24px] mb-3 sm:mb-4">
                 Let’s chat
@@ -115,7 +108,6 @@ const Footer: React.FC = () => {
           </div>
         </div>
 
-        {/* === Copyright / Bottom Line === */}
         <div className="border-t border-white/10 mt-12 sm:mt-16 pt-6 sm:pt-8 text-center text-white/60 text-[13px] sm:text-[14px]">
           © {new Date().getFullYear()} Promptverse AI. All rights reserved.
         </div>
